@@ -11,6 +11,6 @@
         <strong>ERROR:</strong> Введeно невірний формат числа!!!
     <br>
     <br>
-       <a href="index.jsp">Повторити спробу</a>
+       <a href="index.jsp" title="На головну сторінку">Повторити спробу</a>
     </body>
 </html>
