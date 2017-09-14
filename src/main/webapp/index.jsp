@@ -5,7 +5,6 @@
     <title>Volume</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="jquery-3.2.1.js"></script>
 </head>
 
 <body>
@@ -33,21 +32,21 @@
 
         <div class="field">
             <label for="h">Висота, см</label>
-            <input type="text" name="h" id="h">
+            <input type="text" name="h" id="h" required >
         </div>
 
         <br>
 
         <div class="field">
             <label for="s" >Площа основи, см&sup2;</label>
-            <input type="text" name="s"  id="s">
+            <input type="text" name="s"  id="s" required>
         </div>
 
         <br>
 
         <div class="field">
             <label for="r" >Радіус, см</label>
-            <input type="text" name="r"  id="r">
+            <input type="text" name="r"  id="r" required>
         </div>
 
 
