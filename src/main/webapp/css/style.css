@@ -21,5 +21,7 @@ body{
     padding-top: 30px;
     position: fixed;
     height: 530px;
-
+}
+img {
+    padding-left: 70px;
 }
