@@ -32,21 +32,21 @@
 
         <div class="field">
             <label for="h">Висота, см</label>
-            <input type="text" name="h" id="h" required  >
+            <input type="number" step="0.001" min="0" name="h" id="h" required  >
         </div>
 
         <br>
 
         <div class="field">
             <label for="s" >Площа основи, см&sup2;</label>
-            <input type="text" name="s"  id="s" required>
+            <input type="number" step="0.001" min="0" name="s"  id="s" required>
         </div>
 
         <br>
 
         <div class="field">
             <label for="r" >Радіус, см</label>
-            <input type="text" name="r"  id="r" required>
+            <input type="number" step="0.001" min="0" name="r"  id="r" required>
         </div>
 
 
