@@ -32,7 +32,7 @@
 
         <div class="field">
             <label for="h">Висота, см</label>
-            <input type="text" name="h" id="h" required >
+            <input type="text" name="h" id="h" required  >
         </div>
 
         <br>

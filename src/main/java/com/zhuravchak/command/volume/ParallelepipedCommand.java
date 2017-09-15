@@ -15,7 +15,7 @@ public class ParallelepipedCommand  implements ActionCommand {
 
         double s = Double.valueOf(request.getParameter("s"));
         double h = Double.valueOf(request.getParameter("h"));
-
+        if(s<0||h<0) throw new  NumberFormatException();
         double result = s*h;
 
         int accuracy = Integer.valueOf(request.getParameter("accuracy"));

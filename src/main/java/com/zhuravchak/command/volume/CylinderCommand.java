@@ -13,7 +13,7 @@ public class CylinderCommand  implements ActionCommand {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         double r = Double.valueOf(request.getParameter("r"));
         double h = Double.valueOf(request.getParameter("h"));
-
+        if(r<0||h<0) throw new  NumberFormatException();
         double result = Math.PI*r*r*h;
 
         int accuracy = Integer.valueOf(request.getParameter("accuracy"));

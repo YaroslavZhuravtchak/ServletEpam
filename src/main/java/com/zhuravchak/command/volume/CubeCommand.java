@@ -13,7 +13,7 @@ public class CubeCommand  implements ActionCommand {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
 
         double h = Double.valueOf(request.getParameter("h"));
-
+        if(h<0) throw new  NumberFormatException();
         double result = h*h*h;
 
         int accuracy = Integer.valueOf(request.getParameter("accuracy"));

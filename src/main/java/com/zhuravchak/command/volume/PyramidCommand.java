@@ -13,7 +13,7 @@ public class PyramidCommand  implements ActionCommand {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         double s = Double.valueOf(request.getParameter("s"));
         double h = Double.valueOf(request.getParameter("h"));
-
+        if(s<0||h<0) throw new  NumberFormatException();
         double result = s*h/3;
 
         int accuracy = Integer.valueOf(request.getParameter("accuracy"));

@@ -12,6 +12,7 @@ public class BallCommand implements ActionCommand {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
 
         double r = Double.valueOf(request.getParameter("r"));
+        if(r<0) throw new  NumberFormatException();
 
         double result = 4*Math.PI*r*r*r/3;
 
